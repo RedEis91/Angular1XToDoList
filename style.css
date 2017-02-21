@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Antonio');
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: 16px;
+}
+
+.inputClass {
+    color:black;
+}
+.daddyDivcare {
+    padding-top: 40px;
+}
+
+button {
+    background-color: rgb(25, 25, 25);
+}
+
+h2 {
+    font-family: "Antonio", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+}
+.vinDiesel {
+    color: firebrick;
+    cursor: pointer;
+}
+
+.vin {
+    color: firebrick;
+}
+
+ul {
+   
+    list-style-image: url('Sheea.png');
+    
+}
+
+li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>You Just Made My List, Buddy</title>
+</head>
+
+<body ng-app="myModule">
+
+    <div class="row">
+        <div class="col-xs-4">
+            <img src="Screen%20Shot%202017-02-20%20at%208.29.35%20PM.png">
+            <img src="Screen%20Shot%202017-02-20%20at%208.29.35%20PM.png">
+            <img src="Screen%20Shot%202017-02-20%20at%208.29.35%20PM.png">
+            <img src="Screen%20Shot%202017-02-20%20at%208.29.35%20PM.png">
+          
+        </div>
+        <div class="col-xs-8">
+            <div class="daddyDivcare">
+                <h2>DO IT<span class="vin">:</span></h2>
+                <div ng-controller="toDo">
+                    <ul>
+                        <li ng-repeat="do in thingsToDo | filter:itemName ">{{do}}<span ng-click="removeItem($index)" class="vinDiesel"> × </span> </li>
+                    </ul>
+                    <input ng-model="item" class="inputClass">
+                    <button ng-click="addItem()"><img src="shiaface.png">ADD</button>
+                    <br>
+                    <br>
+                </div>
+                <h4>Filter List By Word (Like A NERD!)<span class="vin">:</span></h4>
+                <input type="text" ng-model="itemName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="script.js"></script>
+    <div class="row">
+        <div class="col-xs-8"></div>
+        <div class="col-xs-4">
+         <span>  <img src="Screen%20Shot%202017-02-20%20at%209.20.44%20PM.png"> Copyright Jared Eisenhauer Media 2017 </span>
+        </div>
+    </div>
+</body>
+
+</html>
